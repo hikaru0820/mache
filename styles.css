@@ -1,0 +1,190 @@
+body{
+  background:white;
+  color: black;
+  padding: 100px,100px,100px,100px;
+  font-family:"游明朝", "YuMincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "Sawarabi Mincho", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif ;
+}
+a {
+  color:goldenrod;
+}
+header{
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 0; 
+  z-index: 10;
+  opacity: 0.9;
+}
+.headinfo1{
+  height: 60px;
+}
+.headinfo2{
+  background:white;
+}
+.header-logo{
+  display: flex;
+  background: white;
+  width: 100%;
+  height: 70px;
+  padding-top: 10px;
+}
+.header-logo h1{
+  width: 700px;
+  display: flex;
+  background: white;
+  padding-left: 40px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+  margin-right: 370px;
+}
+.header-logo h2{
+  width: 150px;
+  padding: 10px;
+  margin-top: 0px;
+  background: black;
+  height: 50px;
+    font-size: 25px;
+    text-align: center;
+}
+.header-list{
+  background: white;
+  margin-bottom: 50px;
+}
+.header-list ul{
+  display: flex;
+ list-style: none;
+ margin-top: 0px;
+ padding-left: 0px;
+}
+.header-list li{
+width: 25%;
+font-size: 18px;
+text-align: center;
+}
+.yoyaku{
+  writing-mode:vertical-rl;
+  position: fixed;
+  color: white;
+  top: 300px;
+  float: right;
+  z-index: 10;
+  background: black;
+  opacity: 0.5;
+  right: 0;
+}
+.yoyaku:hover{
+  opacity: 1;
+  cursor: pointer;
+}
+.slide {
+  padding-top: 100px;
+  height:800px ;
+  text-align: center;
+}
+.slide ul{
+  list-style: none;
+  margin-right: auto;
+  margin-left: auto;
+}
+.slide li{
+  position: absolute;
+  bottom:0 ;
+  z-index: 0;
+  animation: slide 12.5s infinite;
+  opacity: 0;
+}
+.slide img{
+  display: block;
+}
+@keyframes slide{
+  0%{opacity: 0;}
+  4%{opacity: 1;z-index: 1;}/* b÷x×100=y */
+  20%{opacity: 1;}/* 100÷c=z */
+  30%{opacity: 0;z-index: 0;}/* y+z */
+}
+
+
+.slide li:first-child{
+  /* position:relative; */
+}
+
+.kyakushitu{
+  margin-top:70px;
+  margin-bottom: 100px;
+  padding-top: 100px;
+  width: 100%;
+}
+.kyakushitu > h1{
+  background: white;
+  text-align: center;
+}
+.yoko{
+   display: flex;
+   overflow-x: scroll;
+   margin-right: 10px;
+}
+.yoko img{
+  padding-right: 20px;
+    padding-left: 20px;
+}
+button{
+   display: block;
+   position: absolute;
+   right: 10px;
+   cursor: pointer;
+   background: black;
+   border-radius: 4px;
+}
+.kuushitu{
+padding-top: 150px;
+margin-bottom: 10px;
+text-align: center;
+width: 100%;
+}
+.kuushitu1{
+  background: white;
+}
+.about_us{
+  background: white;
+  text-align: center;
+  height: 150px;
+  border-top-width: 0px;
+  border-bottom-width: 50px;
+  margin-top: 100px;
+  margin-bottom: 120px;
+  padding-top: 100px;
+  font-size: 20px;
+}
+.instagram{
+  width: 100%;
+  height: 500px;
+  margin-bottom: 100px;
+  margin-top: 10px;
+  background: white;
+text-align: center;
+}
+footer{
+  padding-top: 50px;
+  padding-bottom: 80px;
+  height: 250px;
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 80px;
+  margin-left: 60px;
+  background: lightgray;
+}
+.info1{
+  /* background: pink; */
+  color: gray;
+  padding-right: 50px;
+  padding-left: 50px;
+}
+.info1 p{
+  font-size: 20px;
+}
+.footer-list{
+  list-style: none;
+  font-size: 25px;
+  width: 450px;
+  /* background: yellowgreen; */
+}
